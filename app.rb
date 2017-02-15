@@ -18,6 +18,20 @@ require_relative 'models/pokemon.rb'
 ####################
 
 # localhost: 4567
-get "/" do
+get "/pokemons" do
   erb :index
+end
+
+get '/pokemons/new' do
+  erb :"new"
+end
+
+post '/pokemons' do
+  @pokemon = Pokemon.create(params[:pokemon])
+  redirect "/pokemons/#{@pokemon.id}"
+end
+
+get '/pokemons/:id' do
+  @pokemon = Pokemon.find(params[:id])
+  erb :"show"
 end
