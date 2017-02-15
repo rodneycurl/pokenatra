@@ -17,6 +17,7 @@ require_relative 'models/pokemon.rb'
 #  General routes  #
 ####################
 
+# localhost: 4567
 get "/" do
   erb :index
 end
