@@ -1,5 +1,3 @@
-
-
 Uncomment for sick pokestyle
 
 @font-face {
@@ -22,7 +20,7 @@ body {
   background-repeat: no-repeat;
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
-  font-size: 200%;
+  font-size: 30px;
 }
 
 a:hover {
